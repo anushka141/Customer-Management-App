@@ -1,0 +1,9 @@
+body{
+    background-color: whitesmoke;
+}
+.status-card .card-header{
+    background-color: teal;
+}
+.status-card .card-body{
+    background-color: rgb(125, 172, 172);
+}

@@ -1,0 +1,17 @@
+{% extends 'myapp/main.html' %}
+{% load static%}
+{% block content %}
+<div class="row">
+    <div class="col-md-4 p-4">
+        <div class="card card-body">
+            <form action="" method="post">
+                {% csrf_token %}
+                <p>Are You Sure You Want To Delete "{{item}}"? </p>
+                <a class="btn btn-sm btn-danger" href="{% url 'home' %}">Cancel</a>
+                <input class="btn btn-sm btn-success" type="submit" name="Confirm">
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
